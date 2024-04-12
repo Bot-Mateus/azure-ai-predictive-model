@@ -162,8 +162,21 @@ Agora você pode testar o serviço implantado para verificar se ele está funcio
 4. Clique em "Testar"
 5. Revise os resultados do teste, que incluem o número previsto de aluguéis com base nas características de entrada.
 
+### Resultado
+Após realizar o teste do serviço implantado, o resultado retornado pelo modelo é representado no formato JSON da seguinte maneira:
+
+```json
+{
+  "Results": [
+    {
+      "0": 360.87541184639
+    }
+  ]
+}
+```
 ## Explicando o JSON
 Aqui, o JSON fornecido representa um conjunto de dados de entrada que será usado para testar o modelo. Este JSON contém uma estrutura específica, onde os dados de entrada estão aninhados dentro da chave "Inputs". Dentro dessa chave, há uma lista chamada "data", que contém um único objeto representando uma instância de dados. Cada chave neste objeto corresponde a uma característica específica (como dia, mês, ano, etc.), e os valores associados a essas chaves são os valores das características para a instância de dados específica que está sendo testada. Esses valores são usados pelo modelo para fazer uma previsão do número de aluguéis de bicicletas para essa instância específica.
+
 
        Inputs: Este objeto contém os dados de entrada para o modelo. No exemplo fornecido, existe um único conjunto de dados representado por uma matriz (data), que contém um objeto com várias características (features) que são usadas como entrada para o modelo.
         data: Uma matriz que contém os dados de entrada para o modelo. Cada objeto dentro desta matriz representa uma instância de dados que será processada pelo modelo. No exemplo fornecido, há apenas uma instância de dados.
