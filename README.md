@@ -1,7 +1,7 @@
 # azure-ai-predictive-model-example
 
 ## Descrição
-Demonstração de um modelo preditivo construído com Azure Machine Learning para previsões inteligentes.
+🔮 Demonstração de um modelo preditivo construído com Azure Machine Learning para previsões inteligentes.
 
 ## Sobre este projeto
 Este repositório contém um exemplo prático de como utilizar o Automated Machine Learning na Azure Machine Learning para treinar, avaliar, implantar e testar um modelo de machine learning. O objetivo é prever o número de aluguéis de bicicletas com base em características sazonais e meteorológicas usando um conjunto de dados históricos.
@@ -174,6 +174,8 @@ Após realizar o teste do serviço implantado, o resultado retornado pelo modelo
   ]
 }
 ```
+Este resultado indica que o modelo previu o número de aluguéis de bicicletas com base nas características de entrada fornecidas. O número previsto é aproximadamente 361 aluguéis de bicicletas para o cenário específico representado pelos dados de entrada do teste.
+
 ## Explicando o JSON
 Aqui, o JSON fornecido representa um conjunto de dados de entrada que será usado para testar o modelo. Este JSON contém uma estrutura específica, onde os dados de entrada estão aninhados dentro da chave "Inputs". Dentro dessa chave, há uma lista chamada "data", que contém um único objeto representando uma instância de dados. Cada chave neste objeto corresponde a uma característica específica (como dia, mês, ano, etc.), e os valores associados a essas chaves são os valores das características para a instância de dados específica que está sendo testada. Esses valores são usados pelo modelo para fazer uma previsão do número de aluguéis de bicicletas para essa instância específica.
 
